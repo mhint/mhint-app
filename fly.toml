@@ -1,0 +1,32 @@
+app = "your-app-name"  # Replace with your actual app name
+primary_region = "iad" # You can change this to your preferred Fly.io region
+
+[env]
+  PORT = "8080"  # Fly expects your app to listen on this port
+
+[deploy]
+  release_command = "npm install"
+
+[experimental]
+  auto_rollback = true
+
+[processes]
+  app = "npm run server-dev"
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+  [[services.tcp_checks]]
+    interval = "15s"
+    timeout = "2s"
+    grace_period = "10s"
+    restart_limit = 0
