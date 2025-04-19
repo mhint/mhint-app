@@ -1,5 +1,5 @@
-app = "your-app-name"  # Replace with your actual app name
-primary_region = "iad" # You can change this to your preferred Fly.io region
+app = "mhint-app"
+primary_region = "lax"
 
 [env]
   PORT = "8080"  # Fly expects your app to listen on this port
