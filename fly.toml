@@ -2,7 +2,7 @@ app = "mhint-app"
 primary_region = "lax"
 
 [build]
-  builder = "heroku/buildpacks:20"
+  builder = "heroku/nodejs"
 
 [env]
   PORT = "8080"  # Fly expects your app to listen on this port
