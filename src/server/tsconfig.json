@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "strict": true,
+    "paths": {
+      "*": [
+        "../node_modules/*",
+        "types/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "src/config.json"
+, "money.ts"  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
