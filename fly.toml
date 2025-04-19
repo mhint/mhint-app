@@ -16,6 +16,7 @@ primary_region = "iad" # You can change this to your preferred Fly.io region
 [[services]]
   internal_port = 8080
   protocol = "tcp"
+  processes = "app"
 
   [[services.ports]]
     handlers = ["http"]
