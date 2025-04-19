@@ -15,5 +15,5 @@ const startServer = (port: number) => {
   });
 };
 
-const PORT = 3000;
+const PORT = 8080;
 startServer(PORT);
