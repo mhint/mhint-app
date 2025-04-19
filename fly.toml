@@ -16,7 +16,7 @@ primary_region = "lax"
 [[services]]
   internal_port = 8080
   protocol = "tcp"
-  processes = "app"
+  processes = ["app"]
 
   [[services.ports]]
     handlers = ["http"]
