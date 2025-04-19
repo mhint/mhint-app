@@ -12,10 +12,10 @@ RUN npm install
 COPY . .
 
 # Set environment variable for Fly
-ENV PORT 8080
+ENV PORT 3000
 
 # Expose the port Fly expects
-EXPOSE 8080
+EXPOSE 3000
 
 # Start the app
 CMD ["npm", "run", "server-dev"]

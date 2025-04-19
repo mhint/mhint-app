@@ -2,7 +2,7 @@ app = "mhint-app"
 primary_region = "lax"
 
 [env]
-  PORT = "8080"  # Fly expects your app to listen on this port
+  PORT = "3000"  # Fly expects your app to listen on this port
 
 [deploy]
   release_command = "npm install"
@@ -14,7 +14,7 @@ primary_region = "lax"
   app = "npm run server-dev"
 
 [[services]]
-  internal_port = 8080
+  internal_port = 3000
   protocol = "tcp"
   processes = ["app"]
 
